@@ -23,7 +23,7 @@ $diferencia_fechas = new Control_horario_laboral();
 //Pasando los parametros
 $resultados = $diferencia_fechas->tiempo_transcurrido_fechas( $fecha_inicio, $fecha_final,$dias_fiesta );
 ```
-Retorna un arreglo asositativo:
+Retorna un arreglo asosiativo:
 
 ```
 array (size=5)
