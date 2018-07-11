@@ -18,6 +18,7 @@ ___
 
 Instanciamos un nuevo objeto de la clase ``` Control_horario_laboral() ```
 ```php
+$dias_fiesta = array (0); //se explica mas abajo
 $diferencia_fechas = new Control_horario_laboral();
 //Pasando los parametros
 $resultados = $diferencia_fechas->tiempo_transcurrido_fechas( $fecha_inicio, $fecha_final,$dias_fiesta );
@@ -47,3 +48,37 @@ El mismo puede ser utilizado de la siguiente manera
 ```php
 $tiempo_segundos =  $resultados['tiempo_total_segundos']; //205200
 ```
+___
+## Dias festivos
+
+Los días festivos deben ser especificados en un array, de ser omitidos no se toma ningún día de festivo
+
+```php
+$dias_fiesta = array (
+  '2018-01-01',
+  '2018-05-01'
+);
+```
+
+## Configuracion
+
+Si se desea cambiar las horas laborales se debe modificar el constructor de la clase
+
+```php
+$this->HORA_INICIO_LABORAL = '08:00:00';
+$this->HORA_FINAL_LABORAL = '17:00:00';
+$this->HORAS_LABORALES = 8;
+```
+Tambien es posible modificar cuales son los dias laborales
+
+```php
+/**
+* 1 (para lunes) hasta 7 (para domingo)
+* se utiliza para saber cuales son los dias de la semana
+* o dias laborables
+**/
+$dia_inicial = 1;
+$dia_final = 5;
+
+```
+
