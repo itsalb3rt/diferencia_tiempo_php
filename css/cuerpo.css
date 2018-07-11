@@ -1,0 +1,99 @@
+/* Albert E. Hidalgo Taveras */
+:root {
+	--bg-azul-suave: #03A9F4;
+	--sombra-gris-claro:rgba(0, 0, 0, 0.18);
+	--sombra-gris:rgba(128, 128, 128, 0.59);
+	--sombra-gris-oscuro:rgba(128, 128, 128, 0.9);
+	--sombra-azul-claro:rgba(3, 169, 244, 0.79);
+}
+html{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+body{
+	background-color: rgba(224, 224, 224, 0.27);;
+}
+
+.contenedor{
+	width: 90%;
+    margin: auto;
+    padding: 20px;
+    height: auto;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 2px;
+}
+.contenedor_formulario{
+	padding: 20px;
+    width: auto;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 0 4px 0px var(--sombra-gris-claro);
+    border-radius: 4px;
+}
+.formulario_datos input[type='text']{
+	padding: 20px;
+    border: 1px solid var(--sombra-gris);
+    border-radius: 4px;
+    margin: 5px auto ;
+}
+.contenedor_formulario h1{
+	margin: 2px;
+}
+
+.boton_generico{
+	background: none;
+	border: none;
+    color: white;
+    padding: 8px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+	box-shadow: 0px 0px 4px 0px var(--sombra-gris-claro);
+	transition: 0.3s;
+}
+.boton_generico:hover{
+	box-shadow: 0px 0px 4px 0px var(--sombra-azul-claro);
+	transition: 0.3s;
+}
+.bg_azul_suave{
+	background-color: var(--bg-azul-suave);
+}
+/*Utilizado para botones*/
+.l_content{
+	width: 400px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.creditos{
+	margin: 10px auto;
+	text-align: center;
+}
+
+.creditos a:link,.creditos a:visited{
+	text-decoration: none;
+	color: tomato;
+}
+.centrar_contenido{
+	margin: auto;
+}
+.resultado_comparacion .meta_data{
+	text-align: center;
+}
+.resultado_comparacion{
+	border: 1px solid var(--sombra-gris-claro);
+	box-shadow: 0px 0px 4px 0px var(--sombra-gris-claro);
+	width: 500px;
+	padding: 10px;
+	
+}
+.resultado_comparacion h4{
+	margin: 6px;
+	font-size: 18px;
+}
+
+.resultado_comparacion span{
+	font-weight: bold;
+}
